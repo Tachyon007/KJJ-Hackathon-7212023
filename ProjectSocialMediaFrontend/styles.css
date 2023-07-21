@@ -1,0 +1,95 @@
+body{
+    padding: 0%;
+    margin: 0%;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.navBar{
+    position: fixed;
+    top: 0%;
+    height: 11svh;
+    width: 100svw;
+    z-index: 999;
+
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid grey;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.centerCover{
+    position: relative;
+    width: min-content;
+    height: min-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lookUpBar{
+    position: relative;
+    width: 60%;
+    height:75%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid; 
+    grid-template-columns: 1fr 50fr;
+    gap: 5%;
+
+    border: 1px solid grey;
+    border-radius: 1vmin;
+}
+
+.lookUpBar input{
+    border: none;
+}
+
+
+.projectFeedView {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    height: 60vh;
+
+    margin: 5vh;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid grey;
+}
+
+
+.feedImgContainer{
+    position: relative; 
+    padding: 1%;  
+    border-bottom: 1px solid grey; 
+    border-right: 1px solid grey; 
+    overflow-x: scroll; 
+    overflow-y: hidden;
+}
+
+.feedImgContainer img{
+    object-fit: fill; 
+    height: 34.5vmin; 
+    width: 44vmin; 
+    padding: 0.5vmin; 
+    display: table-cell;
+}
+
+.feedImgScroller{
+    display:table;
+    table-layout:fixed; 
+    width: max-content; 
+    max-height: 100%;
+}

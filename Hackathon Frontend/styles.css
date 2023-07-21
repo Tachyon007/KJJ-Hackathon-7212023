@@ -59,12 +59,21 @@ body{
 
 .selectionGrid{
     position: relative;
-
     height: 40vh;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/*
+@media only screen and (max-width: 600px) {
+    .selectionGrid{
+        position: relative;
+        height: max-content;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        background-color: aqua;
+    }
+}*/
 
 .selectionGrid button{
     position: relative;
@@ -148,6 +157,7 @@ body{
     margin: 3px;
 
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 .tagSelection div:hover{

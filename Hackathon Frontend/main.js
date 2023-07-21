@@ -46,5 +46,5 @@ function toggleSelect(el){
 }
 
 function search(){
-    alert(selectedTags);
+    location.href = "./index.html?" + "[" + selectedTags + "]"; 
 }

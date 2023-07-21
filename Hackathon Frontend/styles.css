@@ -1,0 +1,183 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.clockWrapper{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+
+    width: 100%;
+    height: 25vh;
+}
+
+.clockWrapper div{
+    position: relative;
+
+    width: max-content;
+    min-width: 16vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+    text-align: center;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 10vmin;
+
+    border: 1px solid black;
+}
+
+
+.introText{
+    text-align: center;
+    font-size: 6vmin;
+    padding-top: 1%;
+}
+
+.gridExplantion{
+    text-align: center;
+    font-size: 4vmin;
+    padding-top: 1%;
+}
+
+.arrowContainer{
+    height: 70vh;
+    text-align: center;
+    font-size: 4vmin;
+    padding-top: 1%;
+}
+
+
+.selectionGrid{
+    position: relative;
+
+    height: 40vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.selectionGrid button{
+    position: relative;
+    width: max-content;
+    min-width: 40%;
+
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    border: 1px solid black;
+    background-color: white;
+
+    font-size: 8vmin;
+    letter-spacing: 1vmin;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    transition-duration: 0.5s;
+}
+
+.selectionGrid button:hover{
+    box-shadow: inset 10px 10px 15px -1px rgba(0,0,0,0.49);
+}
+
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.appear{
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 4s;
+
+    animation-fill-mode: forwards;
+}
+
+.delay1{
+    animation-delay: 0.5s;
+}
+.delay2{
+    animation-delay: 1.5s;
+}
+.delay3{
+    animation-delay: 2.5s;
+}
+
+
+.tagSelection{
+    position: relative;
+    width: 80%;
+    height: 50vh;
+
+    border: 1px solid black;
+    border-radius: 1em;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+
+
+}
+
+.tagSelection div{
+    float: left;
+    width: max-content;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 3px;
+    margin: 3px;
+
+    transition-duration: 0.5s;
+}
+
+.tagSelection div:hover{
+    border-radius: 0%;
+}
+
+.tagSelectionSelected{
+    background-color: black;
+    color: white;
+}
+
+.searchButton{
+    position: relative;
+    width: max-content;
+    min-width: 40%;
+
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    border: 1px solid black;
+    background-color: white;
+
+    font-size: 8vmin;
+    letter-spacing: 1vmin;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    transition-duration: 0.5s;
+}
+.searchButton:hover{
+    box-shadow: inset 10px 10px 15px -1px rgba(0,0,0,0.49);
+}

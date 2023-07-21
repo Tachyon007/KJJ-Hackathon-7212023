@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
 
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <script src="./main.js" defer></script>
+
+</head>
+<body>
+    <div class="clockWrapper appear delay1">
+        <div id="clock">
+            12 : 12 : 12
+        </div>
+    </div>
+    <div class="introText appear delay2">
+        Your time is now, show the world your creative side!
+    </div>
+    <div class="gridExplantion appear delay3">
+        Find your next project!
+    </div>
+    <div class="arrowContainer appear delay3">
+        <span class="material-symbols-outlined" style="width: max-content; font-size: 15vmin; padding-top: 5vmin;">
+            south
+        </span>
+    </div>
+
+
+    <div class="selectionGrid" style="border-top: 1px solid black; border-bottom: 1px solid black; padding-top: 2%; padding-bottom: 2%;">
+        <div style="border-right: 1px solid black;">
+            <button>RANDOM</button>
+            <p style="padding-left: 5%; padding-right: 5%;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                See a list of random projects and see what inspires you!
+            </p>
+        </div>
+        <div>
+            <button onclick="scrollToFilter()">SURVEY</button>
+            <p style="padding-left: 5%; padding-right: 5%;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Look through a collection of topics, tags, and subjects to see what catches your eye!
+            </p>
+        </div>
+    </div>
+
+    <section style="margin-top: 50vmin;" id="filter">
+        <p style="font-size: 5vmin; text-align: center;">
+            click on anything you'd like to see in your projects
+        </p>
+        <div class="tagSelection">
+            <div onclick="toggleSelect(this)">game</div>
+            <div onclick="toggleSelect(this)">website</div>
+            <div onclick="toggleSelect(this)">real time</div>
+        </div>
+
+        <button class="searchButton" onclick="search()">SEARCH</button>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+This is an example of connecting the frontend(the users computer), the backend(the server handling requests), and database.
+Its pretty barebones and the setup is as follows:
+
+1. The users computer puts together a structured JSON object with things like email, the projectID for the prompt they chose, and any pictures(which get converted to text).
+The client then sends this to the server.
+
+USES: html, javascript
+
+2. The server for this example is hosted for free on glitch.com and written in the Node.JS language
+The server recives the data from the client and uses its authenticated connection to the database to store the data there.
+!! NOTE: this was whipped up very quickly and is EXTREMELY vulnerable to SQL injection which makes it unsuitable for any real enviornment
+
+USES: Node.js, SQL
+
+3. The MySQL database holds all the data and is hosted under a personal bluehost domain
+
